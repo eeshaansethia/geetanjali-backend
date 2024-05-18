@@ -5,8 +5,8 @@ const mongoose = require('mongoose');
 require('dotenv').config()
 
 const app = express();
-const port = process.env.PORT;
-const uri = `mongodb+srv://${process.env.USER}:${process.env.PASS}@papadapp.pxcscgq.mongodb.net/papadApp?retryWrites=true&w=majority`;
+const port = 3001;
+const uri = `mongodb+srv://eeshaan:Mafia050403@papadapp.pxcscgq.mongodb.net/papadApp?retryWrites=true&w=majority`;
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }))
